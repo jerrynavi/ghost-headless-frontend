@@ -32,8 +32,13 @@ export default function Post(props) {
         <title>{props.post.title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>{props.post.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
+      <main className="post-page">
+        <h1>{props.post.title}</h1>
+        <div
+          dangerouslySetInnerHTML={{ __html: props.post.html }}
+          className="post-page-content"
+        />
+      </main>
     </div>
   );
 }

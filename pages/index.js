@@ -26,6 +26,9 @@ export default function Home(props) {
       <div className="posts-container">
         {props.posts.map((post) => (
           <div className="post-preview" key={post.id}>
+            <div className="post-image">
+              <img src={post.feature_image} alt="post feature image" />
+            </div>
             <h4>
               <Link href={`/post/${post.slug}`}>{post.title}</Link>
             </h4>

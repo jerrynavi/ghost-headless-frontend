@@ -14,3 +14,34 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.posts-container {
+  display: flex;
+  padding: 2rem 1rem;
+}
+
+.post-preview {
+  width: 33.333%;
+  position: relative;
+}
+
+.post-image {
+  position: relative;
+}
+
+.post-image img {
+  width: 100%;
+}
+
+.post-page {
+  padding: 2rem 1rem;
+}
+
+.post-page h1 {
+  text-align: center;
+}
+
+.post-page-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
